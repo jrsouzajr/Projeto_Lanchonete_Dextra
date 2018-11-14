@@ -1,0 +1,51 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nomeLanche": "X-Bacon",
+      "ingredientes": ["Bacon", "Hambúrguer de Carne", "Queijo"]
+    },
+    {
+      "id": 2,
+      "nomeLanche": "X-Burguer",
+      "ingredientes": ["Hambúrguer de Carne", "Queijo"]
+    },
+    {
+      "id": 3,
+      "nomeLanche": "X-Egg",
+      "ingredientes": ["Ovo", "Hambúrguer de Carne", "Queijo"]
+    },
+    {
+      "id": 4,
+      "nomeLanche": "X-Egg Bacon",
+      "ingredientes": ["Bacon", "Ovo", "Hambúrguer de Carne", "Queijo"]
+    }
+  ],
+  "precoIngredientes": [
+    {
+      "idProduto": 1,
+      "nomeProduto": "Alface",
+      "precoProduto": 0.40
+    },
+    {
+      "idProduto": 2,
+      "nomeProduto": "Bacon",
+      "precoProduto": 2.00
+    },
+    {
+      "idProduto": 3,
+      "nomeProduto": "Hambúrguer de Carne",
+      "precoProduto": 3.00
+    },
+    {
+      "idProduto": 4,
+      "nomeProduto": "Ovo",
+      "precoProduto": 0.80
+    },
+    {
+      "idProduto": 5,
+      "nomeProduto": "Queijo",
+      "precoProduto": 1.50
+    }
+  ]
+}

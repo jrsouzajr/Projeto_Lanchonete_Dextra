@@ -1,0 +1,130 @@
+@import '../Variaveis.scss';
+
+.LancheSelecionado {
+    display: flex;
+  &__card {
+    background-color: $backgroundBackFront;
+    color: black;
+    z-index: 2;
+    width: 290px;
+    height: 290px;
+    position: relative;
+    &__title-lanche {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 65px;
+      font-family: 'Cabin';
+      background: $backgroundLabelLanche;
+      color: $nomeLanche;
+      text-transform: uppercase;
+    }
+  }
+  &__lista-ingredientes {
+    width: 290px;
+    height: 185px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      &__remover-produto {
+        font-family: 'Cabin';
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+  }
+  &__menu-adicionar {
+    width: 290px;
+    height: 255px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 10px;
+    &__item {
+        list-style-type: none;
+        height: 30px;
+        padding-left: 20px;
+        font-family: 'Cabin';
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        &:hover{
+          background: $backgroundAdicionarHover;
+          border-radius: 2px;
+          font-weight: 500;
+          color: $labelAdicionarHover;
+      }
+    }
+  }
+  &__lista-ingredientes__titulo {
+    font-family: 'Cabin';
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+  }
+  &__lista-ingredientes__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    padding: 4px 0px;
+    &__nome-produto {
+      font-family: 'Cabin';
+      font-size: 15px;
+    }
+  }
+  &__card-ingredientes {
+    margin-left: 80px;
+  }
+  &__card-adicionar {
+    margin-left: 80px;
+    &__title {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__preco-lanche {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 30px;
+    padding: 10px;
+    color: $nomeLanche;
+  }
+  &__preco-confirmar {
+    background: $backgroundLabelLanche;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__finalizar-compra {
+    color: $nomeLanche;
+    padding: 10px;
+    &__bnt-finalizar {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+  &__telaFim {
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cabin';
+    font-weight: 600;
+    font-size: 20px;
+  }
+}

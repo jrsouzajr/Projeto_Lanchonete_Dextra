@@ -1,0 +1,86 @@
+@import '../Variaveis.scss';
+
+.LanchePronto {
+  .LanchePronto__div-superior {
+    display: flex;
+    justify-content: space-between;
+    animation: cardsAnimation 0.3s;
+    }
+    &__card-lanche {
+      width: 290px;
+      height: 290px;
+      position: relative;
+      perspective: 1000;
+      &__nome-lanche {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        font-family: 'Cabin';
+        background: $backgroundLabelLanche;
+        color: $nomeLanche;
+        text-transform: uppercase;
+      }
+    }
+    &__card-lanche__flip {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    &__card-lanche:hover &__card-lanche__flip {
+      transform: rotateY(180deg);
+    }
+    &__card-lanche__front, &__card-lanche__back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+    &__card-lanche__front {
+      background-color: $backgroundBackFront;
+      color: black;
+      z-index: 2;
+    }
+    &__card-lanche__back {
+      background-color: $backgroundBackCard;
+      color: white;
+      transform: rotateY(180deg);
+      z-index: 1;
+    }
+    &__card-lanche__back__div-button {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+    }
+    &__card-lanche__back__button {
+      padding: 15px;
+      border: 1px solid $labelButtonComprar;
+      width: 100px;
+      margin: auto;
+      cursor: pointer;
+      background: none;
+      transition: background 0.3s;
+      &:hover {
+        background: $buttonComprar;
+        border: 1px solid $buttonComprar;
+        transition: background 0.3s;
+      }
+    }
+    li.LanchePronto_card-lanche__back__ingrediente {
+      text-align: left;
+      margin-left: 50px;
+      font-size: 13px;
+      list-style-type: square;
+    }
+    p.LanchePronto__card-lanche__back__titulo {
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+}

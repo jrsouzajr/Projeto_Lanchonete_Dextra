@@ -1,0 +1,33 @@
+// Animações
+@import 'Animations.scss';
+
+// Fontes
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+//Cores
+$Chumbo: #5b5b58;
+$Cinza: #bbbbbb;
+$CinzaDesbotado: #2b2b2b;
+$CinzaClaro: #eeeeee;
+$Branco: #FFFFFF;
+$Preto: #000000;
+$PretoAcizentado: #111316;
+
+// Menu Superior
+$corMenuTopoBackground: $Chumbo;
+$corMenuTopoLabel: $Branco;
+$corLogo: $Branco;
+
+// Lanches
+$nomeLanche: $Branco;
+$backgroundLabelLanche: $Preto;
+$backgroundBackCard: $PretoAcizentado;
+$backgroundBackFront: $Cinza;
+$buttonComprar: $Chumbo;
+$labelButtonComprar: $Branco;
+$labelAdicionarHover: $CinzaDesbotado;
+$backgroundAdicionarHover: $CinzaClaro;
+
+// Footer
+$footerBackground: $Preto;
+$footerFonte: $Branco;
